@@ -1,30 +1,16 @@
 import React from 'react';
-
-class MovieItem extends React.Component{
-
-    render(){
-            return (
-                <div>
-        {   <h4>(this.props.movie.title)</h4>
-                <p>(this.props.movie.year)</p>
-                <img>(this.props.movie.poster)</img>       
+import '../App.css';
+import Card from 'react-bootstrap/Card'
+class MovieItems extends React.Component {
+        render() {
+                return (
+                        <div>
+                                <h4>{this.props.movie.Title}</h4>
+                                <p>{this.props.movie.Year}</p>
+                                <img src={this.props.movie.Poster} width="200" height="200"></img>
+                        </div>
+                );
         }
-     
-            
-            
-            
-            
-                </div>
-            )
-
-
-
-
-    }
-
-
-
-
-
-
 }
+
+export default MovieItems;
