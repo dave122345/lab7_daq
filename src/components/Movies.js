@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
-import MovieItems from './movieItem';
+import Movieitems from './MovieItems.js';
 class Movies extends React.Component {
     render() {
         return this.props.movies.map((movie) => {
             // console.log({movie})
-            return <MovieItems movie={movie}></MovieItems>
+            return <Movieitems movie={movie}></Movieitems>
         });
     }
 }
