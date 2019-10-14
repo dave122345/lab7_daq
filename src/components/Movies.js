@@ -1,6 +1,9 @@
+//imports
 import React from 'react';
 import '../App.css';
 import Movieitems from './MovieItems.js';
+
+//start of class
 class Movies extends React.Component {
     render() {
         return this.props.movies.map((movie) => {
@@ -10,3 +13,4 @@ class Movies extends React.Component {
     }
 }
 export default Movies;
+//EOF

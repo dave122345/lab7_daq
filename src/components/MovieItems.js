@@ -1,6 +1,9 @@
+//imports
 import React from 'react';
 import '../App.css';
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card'//import from bootstrap for cards
+
+//class starts
 class MovieItems extends React.Component {
         render() {
                 return (
@@ -9,6 +12,7 @@ class MovieItems extends React.Component {
 <p>{this.props.movie.Year}</p>
 <img src={this.props.movie.Poster} width="200" height="200"></img>
 */}
+                                
                                 <Card>
                                         <Card.Header>{this.props.movie.Title}</Card.Header>
                                         <Card.Body>
@@ -25,4 +29,4 @@ class MovieItems extends React.Component {
         }
 }
 
-export default MovieItems;
+export default MovieItems;//EOF
