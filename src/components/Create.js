@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 class Create extends React.Component {
     constructor() {
         super();
@@ -29,6 +30,16 @@ class Create extends React.Component {
     }
     onSubmit(e) {
         e.preventDefault();
+  
+            const newMovie = {
+                Title: this.state.Title,
+                Year: this.state.Year,
+                Poster: this.state.Poster
+            };
+            axios.post("http://localhost:4000/api/movies", newMovie)
+            .then()
+            .catch()
+
         console.log(`button clicked
 ${this.state.Title},
 ${this.state.Year},
